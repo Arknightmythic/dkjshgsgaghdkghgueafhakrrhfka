@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  websocket:
+    build: .
+    container_name: websocket_server
+    ports:
+
+      - "8080:8080"
+    
+    env_file:
+      - .env
+      
+    restart: unless-stopped
+
+
+    # untuk development menggunakan docker dan redis merupakan container terpisah,
+    # maka buat sebuat custom network
+    # 'docker network create my-shared-network'
+    # 'docker network connect my-shared-network redis' (redis adalah nama containernya)
+    networks:
+      - my-shared-network
+
+# untuk development menggunakan docker dan redis merupakan container terpisah,
+networks:
+  my-shared-network:
+    external: true

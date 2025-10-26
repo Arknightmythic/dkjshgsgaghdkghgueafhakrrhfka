@@ -1,0 +1,18 @@
+# Abaikan dependensi lokal, Docker akan menginstalnya sendiri
+node_modules/
+
+# Abaikan file .env, rahasia akan di-inject saat runtime
+.env
+
+# Abaikan file log
+npm-debug.log*
+*.log
+
+# Abaikan file sistem operasi dan git
+.git
+.gitignore
+.DS_Store
+
+# Abaikan file Docker
+Dockerfile
+docker-compose.yml
