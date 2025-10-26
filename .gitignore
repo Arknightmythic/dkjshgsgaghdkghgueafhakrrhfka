@@ -1,0 +1,75 @@
+# ==========================================
+# Node.js Gitignore
+# ==========================================
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Build and production
+dist/
+build/
+out/
+coverage/
+tmp/
+temp/
+.cache/
+.next/
+.nuxt/
+.svelte-kit/
+.vercel/
+.netlify/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+
+# Lock files (optional — uncomment one if your team uses a specific package manager)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Misc
+*.tgz
+*.pid
+*.seed
+*.pid.lock
+
+# Local serverless, Firebase, etc.
+.serverless/
+.firebase/
+functions/node_modules/
+
+be_tester.js
+
+index.html
